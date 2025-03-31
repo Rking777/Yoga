@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Swati Yoga Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Californian+FB&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4b0082;
+            --secondary-color: #9b6cb1;
+            --accent-color: #d0c8e6;
+            --background-color: #f3f0f9;
+            --white-opacity: rgba(255, 255, 255, 0.9);
+            --hover-color: #7b5c99;
+            --button-color: #9b6cb1;
+            --button-hover: #7b5c99;
+            --button-text-color: white;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Californian FB', serif, 'Roboto', sans-serif;
+            background: var(--background-color);
+            color: var(--primary-color);
+        }
+
+        header {
+            background-color: rgba(75, 0, 130, 0.9);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-family: 'Californian FB', serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--white-opacity);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex: 1; /* This allows the section to grow and push the footer down */
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .button {
+            background-color: var(--button-color);
+            color: var(--button-text-color);
+            padding: 12px 20px;
+            border: none;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .button:hover {
+            background-color: var(--button-hover);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                margin: 20px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us - Swati Yoga Studio</h1>
+    </header>
+
+    <section>
+        <h2>Get in Touch on WhatsApp</h2>
+        <p>We’d love to hear from you! Click the button below to send us a message directly on WhatsApp.</p>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/+919723449637" target="_blank" class="button">Send Message on WhatsApp</a>
+
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> contact@swatiyogastudio.com</p>
+        <p><strong>Phone:</strong> +91 9723449637</p>
+        <p><strong>Address:</strong> Shop 25, Adiam Ville, Punawale</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Swati Yoga Studio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

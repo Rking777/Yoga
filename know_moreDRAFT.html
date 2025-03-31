@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know More - Swati Yoga Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Californian+FB&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4b0082;
+            --secondary-color: #9b6cb1;
+            --accent-color: #d0c8e6;
+            --background-color: #f3f0f9;
+            --white-opacity: rgba(255, 255, 255, 0.9);
+            --hover-color: #7b5c99;
+            --button-color: #9b6cb1;
+            --button-hover: #7b5c99;
+            --button-text-color: white;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Californian FB', serif, 'Roboto', sans-serif;
+            background: var(--background-color) url('https://source.unsplash.com/1600x900/?yoga,meditation') no-repeat center center fixed;
+            background-size: cover;
+            color: var(--primary-color);
+            padding-bottom: 40px;
+        }
+
+        header {
+            background-color: rgba(75, 0, 130, 0.9);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-family: 'Californian FB', serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            background: var(--white-opacity);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            line-height: 1.8;
+        }
+
+        h2, h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .batch-info {
+            background-color: var(--accent-color);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .batch-info:hover {
+            transform: scale(1.03);
+            background-color: #d0c8e6;
+        }
+
+        .batch-info strong {
+            font-size: 1.1rem;
+        }
+
+        .kids-yoga {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--button-color);
+            color: var(--button-text-color);
+            padding: 12px 20px;
+            margin: 20px 0;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: var(--button-hover);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        a {
+            color: var(--hover-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                margin: 20px;
+                padding: 20px;
+            }
+
+            .batch-info {
+                font-size: 0.9rem;
+            }
+
+            footer p {
+                font-size: 0.9rem;
+            }
+
+            .button {
+                width: 100%;
+                padding: 15px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Swati Yoga Studio</h1>
+    </header>
+
+    <section>
+        <h2>Discover Our Yoga Sessions</h2>
+        <p>Welcome to Swati Yoga Studio! Our sessions cater to all levels—from beginners to advanced practitioners. Find balance, strength, and mindfulness in every class. Below are the available batches:</p>
+
+        <h3>Yoga Batches:</h3>
+        <div class="batch-info">
+            <strong>6:00 AM to 7:00 AM</strong><br>
+            Gentle morning flow to awaken your body and energize your mind for the day ahead.
+        </div>
+
+        <div class="batch-info">
+            <strong>7:00 AM to 8:00 AM</strong><br>
+            Build strength and flexibility while connecting deeply with your breath.
+        </div>
+
+        <div class="batch-info">
+            <strong>9:30 AM to 10:30 AM</strong><br>
+            A refreshing mid-morning session to rejuvenate your mind and body.
+        </div>
+
+        <div class="batch-info kids-yoga">
+            <strong>5:00 PM to 6:00 PM (🧒 Kids Yoga)</strong><br>
+            Fun, engaging yoga designed to improve kids’ focus, flexibility, and mindfulness.
+        </div>
+
+        <div class="batch-info">
+            <strong>8:00 PM to 9:00 PM</strong><br>
+            End your day with a calming session to relieve stress and promote restful sleep.
+        </div>
+
+        <h3>Why Choose Us?</h3>
+        <p>Our experienced instructors focus on personalized attention, ensuring that each student benefits from a holistic yoga experience.</p>
+        <p>We offer classes for all age groups—from kids to adults, focusing on health, well-being, and inner peace.</p>
+
+        <!-- Added CTA button -->
+        <a href="contact.html" class="button">Join Us Today</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Swati Yoga Studio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
